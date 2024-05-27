@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="productos.css" />
+    <link rel="icon" href="/img/inicio/logo de la pagina xd.ico">
+    <title>Document</title>
+  </head>
+  <body bgcolor="#eee">
+    <header class="menu">
+      <div class="container">
+        <img src="/img/inicio/logo de la pagina.png" width="110px" class="logo"/>
+        <h1 class="titulo">Variedades cupido</h1>
+      </div>
+      <nav class="navvar">
+        <ul class="derecha">
+          <li><a href="index.html" class="a1">Inicio</a></li>
+          <li><a href="productos.html" class="a2">Productos</a></li>
+          <li><a href="contactanos.html">Contactenos</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div>
+        <hr class="linea">
+    </div>
+    <div class="portafolio">
+      <table id="table-large" class="visible">
+          <tr>
+              <td><a href="zapatoniño.html"><br><h2>zapatos para niños</h2><img src="/img/zapatos/8.png"></a></td>
+              <td><a href="almohadas.html"><br><h2>Almohadas</h2><img src="/img/almohadas/2.png"></a></td>
+              <td><a href="carteras.html"><br><h2>Carteras para mujer</h2><img src="/img/carteras/3.png"></a></td>
+          </tr>
+          <tr>
+              <td><a href="conjuntoniño.html"><h2>Conjuntos para niño</h2><img src="img/ropaniños/1.png"></a></td>
+              <td><a href="vestidoniña.html"><h2>Vestidos para niña</h2><img src="img/vestidosniña/9.png"></a></td>
+              <td><a href="gorras.html"><h2>Gorras</h2><img src="img/gorras/1.png"></a></td>
+          </tr>
+      </table>
+
+      <table id="table-small" class="hidden">
+          <tr>
+              <td><a href="zapatoniño.html"><br><h2>zapatos para niños</h2><img src="/img/zapatos/8.png"></a></td>
+          </tr>
+          <tr>
+              <td><a href="almohadas.html"><br><h2>Almohadas</h2><img src="/img/almohadas/2.png"></a></td>
+          </tr>
+          <tr>
+              <td><a href="carteras.html"><br><h2>Carteras para mujer</h2><img src="/img/carteras/3.png"></a></td>
+          </tr>
+          <tr>
+              <td><a href="conjuntoniño.html"><h2>Conjuntos para niño</h2><img src="img/ropaniños/1.png"></a></td>
+          </tr>
+          <tr>
+              <td><a href="vestidoniña.html"><h2>Vestidos para niña</h2><img src="img/vestidosniña/9.png"></a></td>
+          </tr>
+          <tr>
+              <td><a href="gorras.html"><h2>Gorras</h2><img src="img/gorras/1.png"></a></td>
+          </tr>
+      </table>
+  </div>
+
+  <script>
+      function switchTables() {
+          var largeTable = document.getElementById('table-large');
+          var smallTable = document.getElementById('table-small');
+
+          if (window.innerWidth <= 426) {
+              largeTable.classList.add('hidden');
+              smallTable.classList.remove('hidden');
+          } else {
+              largeTable.classList.remove('hidden');
+              smallTable.classList.add('hidden');
+          }
+      }
+
+      window.addEventListener('resize', switchTables);
+      window.addEventListener('load', switchTables);
+  </script>
+  <footer>
+      <div class="footer" id="contactanos">
+          <div class="contenedor2">
+              <div class="medida">
+                  <div class="info">
+                      <div class="info2">
+                          <img src="img/inicio/ubi.jpeg" alt="" width="30px">
+                          <h7>Dirección</h7>
+                          <ul><li><a>Ubicados en: Calle 7 N° 4-14</a></li></ul>
+                      </div>
+                      <div class="info2">
+                      <img src="img/inicio/redes.jpeg" alt="" width="30px">
+                          <h7>Redes Sociales</h7>
+                          <ul>
+                            <i class="fa-brands fa-facebook" style="color: #0866ff; width: 60px;"></i>                                   
+                            <i class="fa-brands fa-instagram" style="color: #ee00ff; width: 60px;"></i>
+                            <i class="fa-brands fa-tiktok" style="color: #000000; width: 60px;"></i>
+                            <i class="fa-brands fa-linkedin" style="color: #0073b2; width: 60px;"></i>
+                          </ul>
+                      </div>
+                      <div class="info2">
+                          <img src="img/inicio/cel.jpeg" alt="" width="40px">
+                          <h7>Télefono</h7>
+                          <ul>
+                              <li><a href="https://api.whatsapp.com/send/?phone=573227316706">+57 3227316706</a></li>
+
+                              <li><a href="mailto:variedadescupido@gmai.com">Variedadescupido@gmail.com</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <br>
+      </div>
+      <div class="copyright">
+          <p>Copyright © 2024 <br>
+              Diseñado por: <br>
+              Juan David Munar
+             <br>Cristian Stiven Cadena
+          </p>
+      </div>
+  </footer>
+    <a href="https://api.whatsapp.com/send?phone=573227316706" class="btn-wsp" target="_blank">
+      <i class="fa fa-whatsapp icono"></i>
+    </a>
+    <script src="https://kit.fontawesome.com/6c0c8b805a.js" crossorigin="anonymous"></script>
+  </body>
+</html>
